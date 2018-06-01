@@ -16,4 +16,12 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+  WIN_COMBINATIONS.each do |win_combo|
+    win_index1 = win_combo[0]
+    win_index2 = win_combo[1]
+    win_index3 = win_combo[2]
+
+    position1 = board[win_index1]
+    position2 = board[win_index2]
+    position3 = board[win_index3]
 end
